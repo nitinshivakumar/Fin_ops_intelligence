@@ -57,11 +57,11 @@ venv\Scripts\activate
 
 ---
 
-# 4 Upgrade Packaging Tools
+# 4. Upgrade Packaging Tools
 
 pip install --upgrade pip setuptools wheel
 
-### to avoid greenlet wheel build errors
+### To avoid greenlet wheel build errors
 pip install greenlet --only-binary :all:
 
 # 5. Install Dependencies
@@ -72,7 +72,7 @@ pip install -r requirements.txt
 
 ---
 
-# 5. Configure Environment Variables
+# 6. Configure Environment Variables
 
 Create a `.env` file in the project root.
 
@@ -95,7 +95,7 @@ Update all values with your own credentials/configuration before running the pro
 
 ---
 
-# 6. Start PostgreSQL using Docker
+# 7. Start PostgreSQL using Docker
 
 ```bash
 docker compose up -d
@@ -115,7 +115,7 @@ financial_doc_postgres
 
 ---
 
-# 7. Start FastAPI Backend
+# 8. Start FastAPI Backend
 
 ```bash
 uvicorn app.api.main:app --reload
@@ -135,7 +135,7 @@ http://127.0.0.1:8000/docs
 
 ---
 
-# 8. Start Streamlit UI
+# 9. Start Streamlit UI
 
 Open a NEW terminal.
 
