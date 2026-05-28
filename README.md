@@ -24,6 +24,9 @@ cd financial_doc_ai
 
 # 2. Create Virtual Environment
 
+## Python version: 
+Use python 3.9.x
+
 ## Mac/Linux
 
 ```bash
@@ -54,7 +57,14 @@ venv\Scripts\activate
 
 ---
 
-# 4. Install Dependencies
+# 4 Upgrade Packaging Tools
+
+pip install --upgrade pip setuptools wheel
+
+### to avoid greenlet wheel build errors
+pip install greenlet --only-binary :all:
+
+# 5. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
